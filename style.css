@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'apple-ish_font';
+    src: url(font.otf) format(opentype);
+}
+
+* {
+    font-family: 'apple-ish_font';
+}
+
+:root{
+    --cor-fundo: #0F1A13 ;
+    --cor-principal: #14291B ;
+    --cor-secundaria: #112316; 
+    --cor-destaque: #00B551;
+    --cor-texto: #D7F9FF;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.caixa-principal{
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1{
+    color: var(--cor-destaque);
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
